@@ -1,0 +1,13 @@
+<h1 [ngClass]="{'admins': isAdmin}">{{title}}</h1>
+
+<button class="view"
+        type="button">
+        view
+</button>
+
+<button class="edit"
+        type="button" *ngIf="isAdmin">
+        edit
+</button>
+
+<button (click)="iAmAdmin()"> je suis admin</button>
